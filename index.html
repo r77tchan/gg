@@ -3,13 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>gg紹介ページ</title>
+  <title>背景動画とコンテンツ</title>
   <link rel="stylesheet" href="gg.css">
 </head>
 <body>
-  <div class="container">
+
+  <section class="main-content">
     <h1>gg紹介ページ</h1>
-    <p><a href="https://gg.mh4.jp/">gg.mh4.jp</a>の紹介ページになります。</p>
-  </div>
+    <p><a href="https://gg.mh4.jp/" target="_blank" rel="noopener noreferrer">gg.mh4.jp</a>の紹介ページになります。</p>
+    <p>このゲームはポートフォリオとして作成されました。</p>
+    <p>1ブロックが16*16ピクセル単位なので、デフォルトの拡大率では小さく表示されます。</p>
+    <p>拡大率を上げることをお勧めします。</p>
+  </section>
+
+  <section class="video-section">
+    <video autoplay muted loop class="background-video">
+      <source src="images/gg1.mp4" type="video/mp4">
+      お使いのブラウザはビデオタグをサポートしていません。
+    </video>
+    <!-- <div class="content-overlay">
+      <button class="cta-button">プレイ</button>
+    </div> -->
+  </section>
+
+  <section class="main-content">
+    <h1>一緒に遊べるマルチプレイゲーム</h1>
+    <p>Linux上でNode.js, Socket.IOなどを用いて動作しています。</p>
+    <p>ブラウザでアクセスするだけでマルチプレイができます。</p>
+  </section>
+
+  <section class="video-section">
+    <video autoplay muted loop class="background-video">
+      <source src="images/gg2.mp4" type="video/mp4">
+      お使いのブラウザはビデオタグをサポートしていません。
+    </video>
+  </section>
+
+  <section class="main-content">
+    <h1>見た目変更&設定</h1>
+    <p>ゲーム内から見た目と設定を変更します。</p>
+    <p>変更内容はlocalStorageに保存されます。</p>
+  </section>
+
+  <section class="video-section">
+    <video autoplay muted loop class="background-video">
+      <source src="images/gg3.mp4" type="video/mp4">
+      お使いのブラウザはビデオタグをサポートしていません。
+    </video>
+  </section>
+
+  <section class="main-content">
+    <h1>オブジェクトを攻撃してゲーム開始</h1>
+    <p>攻撃によりカウントダウンが開始されます。</p>
+    <p>再度攻撃により短縮できます。</p>
+    <p>敵を全て倒すことで次のwaveが予約され、レベルが上がっていきます。</p>
+  </section>
+
+  <section class="video-section">
+    <video autoplay muted loop class="background-video">
+      <source src="images/gg4.mp4" type="video/mp4">
+      お使いのブラウザはビデオタグをサポートしていません。
+    </video>
+  </section>
+
+  <section class="main-content">
+    <h1>オプション</h1>
+    <p>コンソールよりsetWave(数値)の実行により任意のwaveクリア状態へ設定できます。</p>
+    <p>0~100の数値である必要があります。</p>
+  </section>
+
+  <section class="video-section">
+    <video autoplay muted loop class="background-video">
+      <source src="images/gg5.mp4" type="video/mp4">
+      お使いのブラウザはビデオタグをサポートしていません。
+    </video>
+  </section>
+
+  <section class="main-content">
+    <h1>専用discordサーバー</h1>
+    <p>サイトへの接続、wave開始、クリアの情報がbotによりログとして送信されます。</p>
+    <p>discord.jsにより動作しています。</p>
+    <img src="images/gg6.png" alt="discord画像" width="923" height="678">
+  </section>
+
+  <section class="main-content">
+    <h1>Java版</h1>
+    <p>Javaもやる。</p>
+    <p>wave+自分で配置できるようにする。</p>
+  </section>
 </body>
 </html>
