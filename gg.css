@@ -74,9 +74,31 @@ a:hover {
   color: #333;
 }
 
-.main-content img {
+img {
   max-width: 100%; /* 親要素の幅に合わせてサイズを調整 */
   height: auto;    /* アスペクト比を維持して高さを自動調整 */
   display: block;  /* ブロック要素にして余白を防ぐ */
   margin: 0 auto;  /* 画像を中央に配置 */
+}
+
+/* メディアクエリを使って、画面幅が狭いデバイス向けに調整 */
+@media (max-width: 768px) {
+  /* .main-content {
+    padding: 20px;
+  } */
+
+  /* .main-content img {
+    width: 100vw;
+    height: auto;
+    margin-left: calc(-50vw + 50%);
+    max-width: none;
+  } */
+
+  /* .main-content h1 {
+    font-size: 1.5em;
+  }
+
+  .main-content p {
+    font-size: 1em;
+  } */
 }
